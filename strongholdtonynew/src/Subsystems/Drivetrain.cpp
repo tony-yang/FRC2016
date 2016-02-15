@@ -52,12 +52,16 @@ void Drivetrain::InitDefaultCommand() {
 // here. Call these from Commands.
 void Drivetrain::forward() {
 	printf("The forward function for the drivetrain\n");
-	rightMotor->Set(1.0);
-	leftMotor->Set(1.0);
+	leftFrontMotor->Set(0.5);
+	leftRearMotor->Set(0.5);
+	rightFrontMotor->Set(0.5);
+	rightRearMotor->Set(0.5);
 }
 
 void Drivetrain::stop() {
 	printf("The stop function for the drivetrain\n");
-	rightMotor->Set(0.0);
-	leftMotor->Set(0.0);
+	leftFrontMotor->Set(0.5);
+	leftRearMotor->Set(0.5);
+	rightFrontMotor->Set(0.5);
+	rightRearMotor->Set(0.5);
 }
