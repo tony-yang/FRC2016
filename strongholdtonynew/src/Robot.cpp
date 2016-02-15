@@ -51,8 +51,6 @@ void Robot::DisabledInit(){
 
 void Robot::DisabledPeriodic() {
 	Scheduler::GetInstance()->Run();
-
-	printf("Disable the robot in the periodic mode\n");
 }
 
 void Robot::AutonomousInit() {
@@ -65,7 +63,7 @@ void Robot::AutonomousInit() {
 void Robot::AutonomousPeriodic() {
 	Scheduler::GetInstance()->Run();
 
-	printf("We are in the autonomous periodic mode\n");
+
 }
 
 void Robot::TeleopInit() {
@@ -82,7 +80,7 @@ void Robot::TeleopInit() {
 void Robot::TeleopPeriodic() {
 	Scheduler::GetInstance()->Run();
 
-	printf("We are in the teleop periodic mode\n");
+
 }
 
 void Robot::TestPeriodic() {
