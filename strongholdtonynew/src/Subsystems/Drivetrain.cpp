@@ -51,7 +51,6 @@ void Drivetrain::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 void Drivetrain::takeJoystickInput(std::shared_ptr<Joystick> joystick) {
-	printf("Take in the joystick input\n");
 	Joystick *myJoystick = std::static_pointer_cast<Joystick>(joystick).get();
 	robotDrive41->ArcadeDrive(myJoystick, Joystick::kYAxis, myJoystick, Joystick::kZAxis);
 }

@@ -49,8 +49,7 @@ void RobotMap::init() {
         drivetrainRobotDrive41->SetExpiration(0.1);
         drivetrainRobotDrive41->SetSensitivity(0.5);
         drivetrainRobotDrive41->SetMaxOutput(0.99);
-        drivetrainRobotDrive41->SetInvertedMotor(RobotDrive::kFrontLeftMotor, true);
-        drivetrainRobotDrive41->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
+
     armMotor.reset(new Talon(3));
     lw->AddActuator("Arm", "Motor", std::static_pointer_cast<Talon>(armMotor));
     
