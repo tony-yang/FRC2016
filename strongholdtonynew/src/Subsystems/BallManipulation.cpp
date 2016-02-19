@@ -42,3 +42,16 @@ void BallManipulation::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+void BallManipulation::driveBallRelease() {
+	printf("Drive ball release\n");
+	//fetchMotor->Set(0.5);
+}
+
+void BallManipulation::driveBallPivot() {
+	printf("drive ball pivot\n");
+	//pivotMotor->Set(0.5);
+}
+
+void BallManipulation::stop() {
+	ballMotor21->Drive(0, 0);
+}
